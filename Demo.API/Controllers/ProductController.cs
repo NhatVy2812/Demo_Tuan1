@@ -1,5 +1,6 @@
 ﻿using Demo.Application.Services;
 using Demo.Domain.Enitities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection.Metadata;
 
@@ -17,6 +18,7 @@ namespace Demo.API.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> GetAllProduct()
         {
             var products = await _productService.GetAllProductAsync();
@@ -24,6 +26,7 @@ namespace Demo.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<IActionResult> GetByIdProduct(int id)
         {
             var product = await _productService.GetByIdProductAsync(id);
@@ -35,6 +38,7 @@ namespace Demo.API.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> CreateProduct(Product product)
         {
             var createdProduct = await _productService.CreateProductAsync(product);
@@ -42,6 +46,7 @@ namespace Demo.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> UpdateProduct(int id, Product updatedProduct)
         {
             int existingProduct = await _productService.UpdateProductAsync(id, updatedProduct);
@@ -54,6 +59,7 @@ namespace Demo.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             int product = await _productService.DeleteProductAsync(id);
