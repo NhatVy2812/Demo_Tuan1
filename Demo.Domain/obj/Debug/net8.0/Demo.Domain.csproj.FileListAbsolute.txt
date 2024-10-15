@@ -9,3 +9,7 @@ D:\demo\Demo.Domain\obj\Debug\net8.0\Demo.Domain.dll
 D:\demo\Demo.Domain\obj\Debug\net8.0\refint\Demo.Domain.dll
 D:\demo\Demo.Domain\obj\Debug\net8.0\Demo.Domain.pdb
 D:\demo\Demo.Domain\obj\Debug\net8.0\ref\Demo.Domain.dll
+<<<<<<< HEAD
+=======
+D:\demo\Demo.Domain\obj\Debug\net8.0\Demo.Domain.sourcelink.json
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9

@@ -15,3 +15,7 @@ D:\demo\Demo.Infrastructure\obj\Debug\net8.0\refint\Demo.Infrastructure.dll
 D:\demo\Demo.Infrastructure\obj\Debug\net8.0\Demo.Infrastructure.pdb
 D:\demo\Demo.Infrastructure\obj\Debug\net8.0\Demo.Infrastructure.genruntimeconfig.cache
 D:\demo\Demo.Infrastructure\obj\Debug\net8.0\ref\Demo.Infrastructure.dll
+<<<<<<< HEAD
+=======
+D:\demo\Demo.Infrastructure\obj\Debug\net8.0\Demo.Infrastructure.sourcelink.json
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9

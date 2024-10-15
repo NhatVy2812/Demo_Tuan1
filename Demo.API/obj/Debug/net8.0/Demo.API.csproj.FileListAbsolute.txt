@@ -142,3 +142,9 @@ D:\demo\Demo.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Crypto
 D:\demo\Demo.API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\demo\Demo.API\obj\Debug\net8.0\Demo.API.RazorAssemblyInfo.cache
 D:\demo\Demo.API\obj\Debug\net8.0\Demo.API.RazorAssemblyInfo.cs
+<<<<<<< HEAD
+=======
+D:\demo\Demo.API\obj\Debug\net8.0\Demo.API.sourcelink.json
+D:\demo\Demo.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\demo\Demo.API\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9

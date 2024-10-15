@@ -52,6 +52,19 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+<<<<<<< HEAD
+=======
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            }
+          },
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
           "imports": [
             "net461",
             "net462",
@@ -179,6 +192,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+<<<<<<< HEAD
+=======
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -192,6 +212,13 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.8, )"
+<<<<<<< HEAD
+=======
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
             }
           },
           "imports": [

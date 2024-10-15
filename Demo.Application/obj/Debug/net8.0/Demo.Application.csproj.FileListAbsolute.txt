@@ -15,3 +15,7 @@ D:\demo\Demo.Application\obj\Debug\net8.0\Demo.Application.dll
 D:\demo\Demo.Application\obj\Debug\net8.0\refint\Demo.Application.dll
 D:\demo\Demo.Application\obj\Debug\net8.0\Demo.Application.pdb
 D:\demo\Demo.Application\obj\Debug\net8.0\ref\Demo.Application.dll
+<<<<<<< HEAD
+=======
+D:\demo\Demo.Application\obj\Debug\net8.0\Demo.Application.sourcelink.json
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9

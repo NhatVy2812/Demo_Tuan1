@@ -4,6 +4,7 @@ using Demo.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Demo.Infrastructure.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20240925085257_addUser")]
+    partial class addUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,11 +48,7 @@ namespace Demo.Infrastructure.Migrations
                         .HasMaxLength(9)
                         .HasColumnType("nvarchar(9)");
 
-<<<<<<< HEAD
-                    b.Property<DateTime>("CreatedAt")
-=======
                     b.Property<DateTime?>("CreatedAt")
->>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -63,26 +62,16 @@ namespace Demo.Infrastructure.Migrations
                         .HasColumnType("nvarchar(90)");
 
                     b.Property<string>("Type")
-<<<<<<< HEAD
-                        .IsRequired()
-                        .HasMaxLength(21)
-                        .HasColumnType("nvarchar(21)");
-
-                    b.Property<DateTime>("UpdatedAt")
-=======
                         .HasMaxLength(21)
                         .HasColumnType("nvarchar(21)");
 
                     b.Property<DateTime?>("UpdatedAt")
->>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
                     b.ToTable("Products");
                 });
-<<<<<<< HEAD
-=======
 
             modelBuilder.Entity("Demo.Domain.Enitities.User", b =>
                 {
@@ -104,7 +93,6 @@ namespace Demo.Infrastructure.Migrations
 
                     b.ToTable("Users");
                 });
->>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
 #pragma warning restore 612, 618
         }
     }

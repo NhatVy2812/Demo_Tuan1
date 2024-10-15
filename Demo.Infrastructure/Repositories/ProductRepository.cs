@@ -17,17 +17,29 @@ namespace Demo.Infrastructure.Repositories
         {
           _dbContext = databaseContext;
         }
+<<<<<<< HEAD
         public async Task<List<Product>> GetAllAsync()
+=======
+        public async Task<List<Product>> GetAllProductAsync()
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
         {
             return await _dbContext.Products.ToListAsync();
         }
 
+<<<<<<< HEAD
         public async Task<Product> GetByIdAsync(int id)
+=======
+        public async Task<Product> GetByIdProductAsync(int id)
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
         {
             return await _dbContext.Products.AsNoTracking().FirstOrDefaultAsync(b => b.Id == id);
         }
 
+<<<<<<< HEAD
         public async Task<Product> CreateAsync(Product product)
+=======
+        public async Task<Product> CreateProductAsync(Product product)
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
         {
             product.CreatedAt = DateTime.UtcNow;
             product.UpdatedAt = DateTime.UtcNow;
@@ -36,7 +48,11 @@ namespace Demo.Infrastructure.Repositories
             return product;
         }
 
+<<<<<<< HEAD
         public async Task<int> UpdateAsync(int id, Product product)
+=======
+        public async Task<int> UpdateProductAsync(int id, Product product)
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
         {
             return await _dbContext.Products
                 .Where(model => model.Id == id)
@@ -52,7 +68,11 @@ namespace Demo.Infrastructure.Repositories
                 
         }
 
+<<<<<<< HEAD
         public async Task<int> DeleteAsync(int id)
+=======
+        public async Task<int> DeleteProductAsync(int id)
+>>>>>>> 2cb1c2bd7c23700fd265a6d26281c585b2cf16e9
         {
             return await _dbContext.Products.Where(model => model.Id == id).ExecuteDeleteAsync();
         }
